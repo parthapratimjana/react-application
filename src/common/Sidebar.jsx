@@ -1,6 +1,6 @@
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CircumIcon from "@klarr-agency/circum-icons-react"; // React
-import {Link, NavLink } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 export default function Sidebar() {
     const menu = [
         {
@@ -113,9 +113,10 @@ export default function Sidebar() {
             <ul className='sidebarMenu nav flex-column'>
                 {
                     menu.map((mainMenu, index) => {
+                        index++;
                         return (
                             mainMenu.submenu.length > 0 ?
-                            <li key={index} className='nav-item'>
+                            <li key={`key${index}`} className='nav-item'>
                                 
                                 <NavDropdown title={mainMenu.label} id={`dropdown${mainMenu.label}`} autoClose={false}>
                                 
@@ -133,8 +134,8 @@ export default function Sidebar() {
                                 <CircumIcon name={"square_chev_right"}/>
                                 </li>
                                 :
-                                <li  key={index} className="nav-item">
-                                <NavLink  activeClassName="active" className='nav-link' to={mainMenu.link}>
+                                <li  key={`key${index}`} className="nav-item">
+                                <NavLink  activeclassname="active" className='nav-link' to={mainMenu.link}>
                                     <CircumIcon name={mainMenu.icon}/>
                                     {mainMenu.label}
                                     </NavLink >

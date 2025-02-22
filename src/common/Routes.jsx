@@ -6,11 +6,11 @@ import Accordion from '../pages/Accordion';
 export default function Routers() {
     return (
         <Routes>
-        <Route path='/' element={<Landing/>} />
-        <Route path='/dashboard' element={<Dashboard/>} />
-        <Route path='/table' element={<Table/>} />
-        <Route path='/accordion' element={<Accordion/>} />
-        <Route path='*' element={<Navigate to="/dashboard"/>} />
+        <Route index element={<Landing/>} />
+        <Route path='dashboard' element={<Dashboard/>} />
+        <Route path='table' element={<Table/>} />
+        <Route path='accordion' element={<Accordion/>} />
+        <Route path='*' element={<Navigate to="dashboard"/>} />
       </Routes>
     );
 }
