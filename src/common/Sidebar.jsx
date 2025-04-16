@@ -4,109 +4,11 @@ import {NavLink } from 'react-router-dom'
 export default function Sidebar() {
     const menu = [
         {
-            "label": "Dashboard",
-            "link": "dashboard",
+            "label": "Recepies",
+            "link": "recepies",
             "submenu": [],
             "icon" : "desktop"
-        },
-        {
-            "label": "Table",
-            "link": "table",
-            "submenu": [],
-            "icon" : "indent"
-        },
-        {
-            "label": "Billing",
-            "link": "home",
-            "submenu": [],
-            "icon" : "calculator_1"
-        },
-        {
-            "label": "Component",
-            "link": "home",
-            "icon" : "calendar",
-            "submenu": [
-                {
-                    "label": "Accordion",
-                    "link": "accordion",
-                    "icon" : "line_height"
-                },
-                {
-                    "label": "Alert",
-                    "link": "home",
-                    "icon" : "warning"
-                },
-                {
-                    "label": "Cards",
-                    "link": "home",
-                    "icon" : "money_bill"
-                },
-                {
-                    "label": "button",
-                    "link": "home",
-                    "icon" : "mobile_1"
-                }
-            ]
-        },
-        {
-            "label": "Mail",
-            "link": "home",
-            "submenu": [],
-            "icon" : "mail"
-        },
-        {
-            "label": "utilities",
-            "link": "home",
-            "icon" : "bank",
-            "submenu": []
-        },
-        {
-            "label": "Dashboard",
-            "link": "home",
-            "submenu": [],
-            "icon" : "desktop"
-        },
-        {
-            "label": "Table",
-            "link": "home",
-            "submenu": [],
-            "icon" : "indent"
-        },
-        {
-            "label": "Billing",
-            "link": "home",
-            "submenu": [],
-            "icon" : "calculator_1"
-        },
-        {
-            "label": "Component",
-            "link": "home",
-            "icon" : "calendar",
-            "submenu": [
-                {
-                    "label": "Accordion",
-                    "link": "home",
-                    "icon" : "calendar"
-                },
-                {
-                    "label": "button",
-                    "link": "home",
-                    "icon" : "calendar"
-                }
-            ]
-        },
-        {
-            "label": "Mail",
-            "link": "home",
-            "submenu": [],
-            "icon" : "mail"
-        },
-        {
-            "label": "utilities",
-            "link": "home",
-            "icon" : "bank",
-            "submenu": []
-        },
+        }
     ]
     return (
         <div className="sidebar">
