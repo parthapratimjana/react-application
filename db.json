@@ -1,0 +1,11 @@
+{
+  "bookings": [
+    {
+      "id": "a61f",
+      "customerName": "ddd",
+      "noOfPeople": "2",
+      "phoneNumber": "3333333332",
+      "visitDate": "2024-12-18"
+    }
+  ]
+}
