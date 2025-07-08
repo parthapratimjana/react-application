@@ -1,11 +1,37 @@
 {
-  "bookings": [
-    {
-      "id": "a61f",
-      "customerName": "ddd",
-      "noOfPeople": "2",
-      "phoneNumber": "3333333332",
-      "visitDate": "2024-12-18"
-    }
-  ]
+  "prescription": {
+    "patient": {
+      "name": "John Doe",
+      "age": 35,
+      "gender": "Male",
+      "contact": "+91 9876543210"
+    },
+    "doctor": {
+      "name": "Dr. Jane Smith",
+      "specialization": "General Physician",
+      "license": "12345-ABC",
+      "hospital": "XYZ Medical Center"
+    },
+    "medications": [
+      {
+        "name": "Paracetamol",
+        "dosage": "500mg",
+        "frequency": "Twice a day",
+        "duration": "5 days"
+      },
+      {
+        "name": "Amoxicillin",
+        "dosage": "250mg",
+        "frequency": "Three times a day",
+        "duration": "7 days"
+      }
+    ],
+    "instructions": [
+      "Take medicines with water after meals.",
+      "Drink plenty of fluids.",
+      "Avoid spicy food."
+    ],
+    "date": "2025-05-18",
+    "next_appointment": "2025-05-25"
+  }
 }

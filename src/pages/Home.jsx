@@ -3,6 +3,7 @@ import Homebanner from '../common/components/Homebanner'
 import { useNavigate } from "react-router-dom";
 import { useContext, useEffect } from "react";
 import { authcontext } from '../App'
+import HomeCarousel from '../common/components/HomeCarousel';
 export default function Home() {
     const [authToken, setAuthToken, login] = useContext(authcontext);
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function Home() {
     return (
         <>
             <Homebanner />
-            <button onClick={login}>Click to login</button>
+            <HomeCarousel/>
 
         </>
     );
