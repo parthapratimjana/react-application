@@ -4,8 +4,8 @@ import { useState } from "react";
 export default function Login() {
     const [formData, setFormData] = useState(
         {
-            "email": "abhi@gmail.com",
-            "password": "12345"
+            "email": "admin@mail.com",
+            "password": "admin123"
           }
     )
     const loginProcess = (e)=>{

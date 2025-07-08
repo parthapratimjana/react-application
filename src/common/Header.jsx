@@ -14,7 +14,9 @@ export default function Header() {
                     <img alt="logo" src={logo} />
                     </Link>
                     <div>
-                   {authToken &&  <Link className="mx-2" to="recepies">Recepies</Link>}
+                   {/* {authToken &&  <Link className="mx-2" to="recepies">Recepies</Link>} */}
+                   <Link className="mx-2" to="users">Users</Link>
+                   <Link className="mx-2" to="recepies">Recepies</Link>
                     <Link className="mx-2" to="accordion">Accordion</Link>
                     <Link className="mx-2" to="table">Table</Link>
                     {authToken && <button className="mx-2 btn btn-link" onClick={logout}>Logout</button>}
